@@ -28,6 +28,9 @@ header
 .row{
     display: flex;
 }
+.col-3{
+    width: 20%;
+}
 .col-4{
     width: 33.33%;
 }
