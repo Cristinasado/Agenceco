@@ -1,13 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
 /* Header */
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+  padding-left: 10%;
+  padding-right: 10%; 
+}
+.text-center{
+    text-align: center;
+}
 
 header
 {
     justify-content: space-between;
     align-items: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#plante img{
+    width: 100%;
 }
 
 .row{
     display: flex;
+}
+.col-4{
+    width: 33.33%;
+}
+.rounded{
+    border-radius: 50%;
 }
 
 
