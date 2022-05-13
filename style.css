@@ -12,7 +12,9 @@ body{
 }
 .text-center{
     text-align: center;
+    font-weight: bold;
 }
+
 
 header
 {
@@ -24,7 +26,13 @@ header
 #plante img{
     width: 100%;
 }
-
+.style{
+    position: absolute;
+    right: 5%;
+    font-size: 250%;
+    top: 100%;
+    color: white;   
+}
 .row{
     display: flex;
 }
@@ -34,10 +42,23 @@ header
 .col-4{
     width: 33.33%;
 }
+.col-5{
+    width: 35%;
+    background-color: #053B44;
+    color:#D5F31F;
+    font-size: 120%;
+}
+mark{
+    background-color: #053B44;
+    color: white;
+}
+strong{
+    font-size: 120%;
+    color:#D5F31F;
+}
 .rounded{
     border-radius: 50%;
 }
-
 
 /* Navigation*/
 nav ul
