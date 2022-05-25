@@ -13,21 +13,26 @@
 </head>
 
 <body>
-    <header class="row">
-        <div id="agence">
-            <h1>Agenceco</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#"></a>Accueil</a></li>
-                <li><a href="#"></a>Notre equipe</li>
-                <li><a href="#"></a>Nos services</li>
-                <li><a href="#"></a>Temoignages</li>
-                <li><a href="#"></a>Contactez-nous</li>
-                <li><a href="#"></a>Notre galerie</li>
+    <nav>
+        <div class="logo">Agenceco</div>
+
+        <div class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link"></a>Accueil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Notre equipe</li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Nos services</li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Temoignages</li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Contactez-nous</li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Notre galerie</li>
             </ul>
-        </nav>
-    </header>
+        </div>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
 
     <section>
         <div id="plante">
@@ -223,6 +228,23 @@
                 </div>
             </div>
     </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) =>
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            })
+        );
+
+    </script>
 </body>
 
 </html>
