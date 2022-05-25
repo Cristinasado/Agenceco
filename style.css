@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 /* Header */
+header
+{
+    justify-content: space-between;
+    align-items: flex-end;
+    top: 0; 
+    width: 100%;
+}
+
+/* Body*/
 
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+}
+#agence h1{
+    margin-left: 50px;
+}
+nav{
+    margin-bottom: 20px;
 }
 .container{
   padding-left: 10%;
@@ -12,62 +27,84 @@ body{
 }
 section#contact {
     background-color: #053B44;
-    padding: 80px 0;
-}
-section#contact .container{
-    max-width: 1000px;
-    margin: 0px auto;
-    display: flex;
-    flex direction: column;
-    justify-content: space-between;
-    height: 450px;
-    box-sizing: border box;
-}
-section#contact .container form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 100px;
-}
-section#contact .container form input{
-    width: 47%;
 }
 
+section#contact .container form input{
+    width: 90%;
+}
+#service h1{
+    font-size: 30px;
+    color: #029d5b;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10%;
+}
+#site{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 50%;
+}
+#site p{
+    font-weight: bold;
+}
+#audit{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 50%;
+}
+#audit p{
+    font-weight: bold;
+}
+#equipe h1{
+    color: #029d5b;
+    font-size: 30px;
+    margin-top: 50px;
+}
+#equipe p{
+    font-size:20px ;
+}
+.col-12{
+    width: 100%;
+}
+.col-6{
+    width: 50%;
+    color: white;
+}
+input[type="text"], textarea
+{
+    background: transparent;
+    border-left:  none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px solid white;
+    width: 100%;
+}
 section#contact .container .title h1 {
 text-align: center;
 color: #D5F31F;
-font-size: 40px;
+font-size: 30px;
+}
+.btn{
+    background-color:#D5F31F ;
+    padding: 20px;
+    border: #D5F31F 1px solid;
 }
 section#contact .container .title h2{
     text-align: center;
     color: white;
     font-size: 20px;
+    margin-bottom: 60px;
 }
 .text-center{
     text-align: center;
     font-weight: bold;
 }
-.form-control{
-    width: 600px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid white;
+
+section#metting .container .image{
+    width: 5%;
+    border-radius: 10px;
 }
-span{
-    background-color: #D5F31F;
-}
-#metting img{
-    width: 35%;
-    margin-left: 12%;
-    border-radius: 25px;
-}
-header
-{
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-left: 5%;
-    padding-right: 5%;
-}
+
 #plante img{
     width: 100%;
 }
@@ -81,17 +118,77 @@ header
 .row{
     display: flex;
 }
-.col-3{
-    width: 20%;
+.bg-dark{
+    background-color: #053B44;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.col-5{
+    width: 65%;
+    color:#D5F31F;
+    font-size: 120%;
 }
 .col-4{
     width: 33.33%;
+    margin-bottom: 40px;
+    margin-top: 70px;
 }
-.col-5{
-    width: 35%;
-    background-color: #053B44;
-    color:#D5F31F;
-    font-size: 120%;
+.col-4 p{
+    font-weight: lighter;
+}
+.pied-formulaire{
+    margin-top: 30px;
+}
+#star img{
+    border-radius: 2%;
+    width: 85%;
+   margin-bottom: 150px;
+   margin-top: 40px;
+}
+#star h3{
+    color: #029d5b;
+    font-size: 30px;
+}
+#star p{
+    font-size:20px ;
+    text-align: center;
+    margin: 10px;
+}
+#reunion{
+    margin-top: 90px;
+    margin-bottom: 100px;
+    margin-left: 120px;
+}
+#reunion img{
+    border-radius: 5%;
+    width: 100%;
+}
+#eco{
+    margin-top: 90px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 100px;
+    border: 1px solid;
+    border-color: #053B44;
+    width: 80%;
+    border-radius: 5%;
+}
+#eco h1{
+    font-weight: bold;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+#eco p{
+    font-weight: lighter;
+}
+#eco img{
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 2px #053B44;
+}
+.p-3{
+    padding: 30px 0 30px 0;
 }
 #info{
     background-color: #053B44;
@@ -108,7 +205,7 @@ strong{
     border-radius: 50%;
 }
 
-/* Navigation*/
+/*Navigation*/
 nav ul
 {
     list-style-type: none;
@@ -123,4 +220,34 @@ nav a
     font-size: 1em;
     color: #1c2126;
     text-decoration: none;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #053B44; 
+   display: flex;
+   color: white;
+}
+#inf{
+    column-gap: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#telephone{
+    font-size: 13px;
+}
+#adresse{
+    font-size: 13px;
+}
+
+.box{
+    background-color: #efefef;
+    border-radius: 30px;
+    padding: 50px;
+    color: black;
+    width: 60%;
+    margin: 0 auto;
 }

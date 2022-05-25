@@ -14,7 +14,9 @@
 
 <body>
     <header class="row">
-        <h1>Agenceco</h1>
+        <div id="agence">
+            <h1>Agenceco</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#"></a>Accueil</a></li>
@@ -36,12 +38,13 @@
         </div>
     </section>
 
-    <section class="container">
-        <article>
-            <h1 class="text-center">Notre equipe</h1>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed leo i nisi
-                vehicula<br>
-                bibendum. Aliquam sit amet blandit nisi, sodales molestie.</p>
+    <section class="container" class="text-center">
+        <article class="text-center">
+            <div id="equipe">
+                <h1> Notre equipe </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed leo i nisi
+                    vehicula<br>
+                    bibendum. Aliquam sit amet blandit nisi, sodales molestie.</p>
             </div>
         </article>
 
@@ -69,7 +72,7 @@
 
     </section>
 
-    <section>
+    <section class="bg-dark p-3 mt-60">
         <div class="row">
             <div id="chiffre" class="col-5 text-center">
                 <h1>2500</h1>
@@ -87,86 +90,138 @@
                 <h1>2500</h1>
                 <p><mark> Clients satisfaits </mark></p>
             </div>
-    </section>
-
-    <section class="row">
-        <h1 class="text-center">Notre services</h1>
-        <div id="Site web" class="col-4 text-center">
-            <img src="resources/Vector.JPG" alt="Site web" />
-            <p>Creation de sites web</p>
-        </div>
-        <div id="Audit" class="col-4 text-center">
-            <img src="resources/Vector1.JPG" alt="Audit" />
-            <p>Audit qualite</p>
         </div>
     </section>
 
-    <section id="contact">
+    <section class="text-center container">
+        <div id="service">
+            <h1>Notre services</h1>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="box">
+                    <img src="resources/Vector.JPG" alt="Site web" />
+                    <p>Creation de sites web</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="box">
+                    <img src="resources/Vector1.JPG" alt="Audit" />
+                    <p>Audit qualite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark p-3 mt-60">
         <div class="container">
             <div class="title">
                 <h1>Contactez-nous</h1>
                 <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Donec sed leo in.</h2>
             </div>
             <form action="#" method="post">
-                <input type="text" name="Nom" placeholder="Nom" required=""><br>
-                <input type="text" name="telephone" placeholder="Telephone" required=""><br>
-                <input type="text" name="Email" placeholder="Email" required=""><br>
-                <input type="text" name="Message" placeholder="Message" required=""><br>
-                <input type="text" name="Categorie" placeholder="Categorie" required=""><br>
-                <input type="text" name="Ville" placeholder="Ville" required=""><br>
-                <button type "submit">Envoyer</button>
-            </form>   
-        </div>       
+                <div class="row">
+                    <div class="col-6">
+                        <p>Nom</p>
+                        <input type="text" name="Nom" required="" />
+                    </div>
+                    <div class="col-6">
+                        <p>Categorie</p>
+                        <input type="text" name="Categorie" required="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Téléphone</p>
+                        <input type="text" name="telephone" required="" />
+                    </div>
+                    <div class="col-6">
+                        <p>Ville</p>
+                        <input type="text" name="Ville" required="" />
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p>Email</p>
+                    <input type="text" name="Email" required="" />
+                </div>
+                <div class="col-12">
+                    <p>Message</p>
+                    <textarea name="message" id="" rows="10"></textarea>
+                </div>
+                <div class="pied-formulaire" align="right">
+                    <button class="btn">Envoyer</button>
+                </div>
+            </form>
+        </div>
     </section>
 
     <section>
-        <div id="metting">
-            <img src="resources/jason-goodman-Oalh2MojUuk-unsplash 1.JPG" alt="Reunion" />
-    
-            <h1>A propos de nous</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                Donec sed leo in adipscing.</p>
-            <p><img src="resources/Vector-2.JPG" alt="Eco" title="Ecologique" /><img src="resources/Vector-3.JPG"
-                    alt="Responsable" title="Responsable" /><img src="resources/Vector-4.JPG" alt="24h"
-                    title="24/7 Assistance" />
+        <div class="row">
+            <div id="reunion">
+                <img src="resources/jason-goodman-Oalh2MojUuk-unsplash 1.JPG" alt="Reunion" />
             </div>
-        <h1>Notre galerie</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum.Aliquam sit
-            amet blandit nisi, sodales molestie.</p>
-        <img src="resources/kevin-bhagat-zNRITe8NPqY-unsplash 1.JPG" alt="Bureau" />
-        <a href="#" class="flech gauche" </a>
-            <a href="#" class="flech droit" </a>
+            <div id="eco" class="text-center">
+                <h1>A propos de nous</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+                    Donec sed leo in adipscing.</p>
+                <div class="image-ronde">
+                    <img src="resources/Vector-2.JPG" alt="Eco" title="Ecologique" />
+                    <img src="resources/Vector-3.JPG" alt="Responsable" title="Responsable" />
+                    <img src="resources/Vector-4.JPG" alt="24h" title="24/7 Assistance" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center">
+        <div id="star">
+            <h3>Notre galerie</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed leo in nisi vehicula<br>
+                bibendum.Aliquam sit amet blandit nisi, sodales molestie.</p>
+            <img src="resources/kevin-bhagat-zNRITe8NPqY-unsplash 1.JPG" alt="Bureau" />
+            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+        </div>
     </section>
 
     <footer>
-        <div class="row">
-            <div id="Content" class="col-3 text-center">
+        <div id="inf" class="row">
+            <div>
                 <h1>Content</h1>
                 <p>consectetur</p>
                 <p>adipiscing</p>
             </div>
 
-            <div id="Informations" class="col-3 text-center">
+            <div>
                 <h1>Informations</h1>
                 <p>consectetur</p>
                 <p>adipiscing</p>
             </div>
 
-            <div id="Services" class="col-3 text-center">
+            <div>
                 <h1>Services</h1>
                 <p>consectetur</p>
                 <p>adipiscing</p>
             </div>
 
-            <div id="Aide" class="col-3 text-center">
+            <div>
                 <h1>Aide</h1>
                 <p>consectetur</p>
                 <p>adipiscing</p>
-
-                <i class="col-3 text-center" class="fa fa-phone" aria-hidden="true"></i> +33 00 00 00 00 0
             </div>
-
-
+            <div class="contact-info">
+                <div class="row">
+                    <div><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <p>+33 00 00 00 00 00<br>+33 00 00 00 00 00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <p>75001 Paris<br>France<br></p>
+                    </div>
+                </div>
+            </div>
     </footer>
 </body>
 
