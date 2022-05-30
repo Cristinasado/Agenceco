@@ -22,8 +22,6 @@ body{
     margin-bottom: 20px;
 } */
 
-
-
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -180,11 +178,6 @@ a.nav-link {
     padding: 0.75rem 0;
   }
 }
-
-
-
-
-
 .container{
   padding-left: 10%;
   padding-right: 10%; 
@@ -203,22 +196,6 @@ section#contact .container form input{
     margin-top: 60px;
     margin-bottom: 10%;
 }
-#site{
-    margin-bottom: 30px;
-    margin-top: 10px;
-    width: 50%;
-}
-#site p{
-    font-weight: bold;
-}
-#audit{
-    margin-bottom: 30px;
-    margin-top: 10px;
-    width: 50%;
-}
-#audit p{
-    font-weight: bold;
-}
 #equipe h1{
     color: #029d5b;
     font-size: 30px;
@@ -229,6 +206,7 @@ section#contact .container form input{
 }
 .col-12{
     width: 100%;
+    color: white;
 }
 .col-6{
     width: 50%;
@@ -252,6 +230,8 @@ font-size: 30px;
     background-color:#D5F31F ;
     padding: 20px;
     border: #D5F31F 1px solid;
+    border-radius: 30px;
+    width: 20%;
 }
 section#contact .container .title h2{
     text-align: center;
@@ -309,7 +289,7 @@ section#metting .container .image{
 #star img{
     border-radius: 2%;
     width: 85%;
-   margin-bottom: 150px;
+   margin-bottom: 40px;
    margin-top: 40px;
 }
 #star h3{
@@ -363,9 +343,26 @@ mark{
     background-color: #053B44;
     color: white;
 }
+.box{
+  background-color: #efefef;
+  border-radius: 30px;
+  padding: 50px;
+  color: black;
+  width: 60%;
+  margin: 0 auto;
+}
 strong{
     font-size: 120%;
     color:#D5F31F;
+}
+
+#droite{
+  text-align: right;
+  margin-right: 10%;
+}
+#gauche{
+  text-align: left;
+  margin-left: 10%;
 }
 .rounded{
     border-radius: 50%;
@@ -408,12 +405,18 @@ footer{
 #adresse{
     font-size: 13px;
 }
-
-.box{
-    background-color: #efefef;
-    border-radius: 30px;
-    padding: 50px;
-    color: black;
-    width: 60%;
-    margin: 0 auto;
+#copy {
+  background-color: #062a2c;
+display: flex;
+  color: white;
 }
+#copy h1{
+  font-size: 12px;
+  margin-right: 70%;
+  margin-top: 40px;
+}
+#copy p{
+word-spacing: 40px;
+font-size: 25px;
+}
+
