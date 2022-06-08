@@ -64,7 +64,7 @@ ul {
 
 .nav-menu li {
   list-style: none;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .nav-menu {
@@ -82,7 +82,7 @@ ul {
 
 a.nav-link {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -117,67 +117,8 @@ a.nav-link {
   width: 300%;
 }
 
-@media (max-width: 992px) {
-  .hamburger {
-    display: block;
-  }
-  .active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(-315deg);
-    transform: translateY(8px) rotate(-315deg);
-    width: 300%;
-  }
-  .active .bar:nth-child(3) {
-    -webkit-transform: translateY(-10px) rotate(-45deg);
-    transform: translateY(-10px) rotate(-45deg);
-    width: 300%;
-  }
-  .nav-menu {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 75px;
-    right: -100%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    margin: 0 auto;
-    background: white;
-  }
 
-  .nav-menu li {
-    padding: 1rem 0;
-  }
 
-  a.nav-link {
-    margin: 1rem 0;
-    color: #333;
-    z-index: 1;
-  }
-
-  .active {
-    right: 0;
-    z-index: 100;
-    transition: 0.2s ease;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  a.nav-link {
-    padding: 0.75rem 0;
-  }
-}
 .container{
   padding-left: 10%;
   padding-right: 10%; 
@@ -232,6 +173,7 @@ font-size: 30px;
     border: #D5F31F 1px solid;
     border-radius: 30px;
     width: 20%;
+    text-align: center;
 }
 section#contact .container .title h2{
     text-align: center;
@@ -262,7 +204,7 @@ section#metting .container .image{
     margin-bottom: 150px;
 }
 .row{
-    display: flex;
+  display: flex;
 }
 .bg-dark{
     background-color: #053B44;
@@ -271,20 +213,27 @@ section#metting .container .image{
     margin-top: 60px;
 }
 .col-5{
-    width: 65%;
+    width: 25%;
     color:#D5F31F;
-    font-size: 120%;
+    font-size: 100%;
 }
 .col-4{
     width: 33.33%;
     margin-bottom: 40px;
     margin-top: 70px;
 }
+.col-2{
+  width: 40%;
+  background-color: #053B44;
+  font-size: 15px;
+  color: white;
+}
 .col-4 p{
     font-weight: lighter;
 }
 .pied-formulaire{
-    margin-top: 30px;
+    margin-top: 10px;
+    text-align: right;
 }
 #star img{
     border-radius: 2%;
@@ -295,30 +244,26 @@ section#metting .container .image{
 #star h3{
     color: #029d5b;
     font-size: 30px;
+    margin-top: 50px;
 }
 #star p{
     font-size:20px ;
     text-align: center;
     margin: 10px;
 }
-#reunion{
-    margin-top: 90px;
-    margin-bottom: 100px;
-    margin-left: 120px;
-}
 #reunion img{
     border-radius: 5%;
-    width: 100%;
+    width: 80%;
+    margin-top: 10%;
 }
 #eco{
-    margin-top: 90px;
-    margin-bottom: 100px;
-    margin-left: 70px;
-    margin-right: 100px;
+  margin-top: 10%;
     border: 1px solid;
     border-color: #053B44;
-    width: 80%;
     border-radius: 5%;
+    width: 80%;
+  
+    
 }
 #eco h1{
     font-weight: bold;
@@ -328,17 +273,14 @@ section#metting .container .image{
 #eco p{
     font-weight: lighter;
 }
-#eco img{
-    margin-top: 10%;
-    border-radius: 50%;
-    border: 2px #053B44;
+
+#content1 p{
+  font-weight: lighter;
 }
 .p-3{
     padding: 30px 0 30px 0;
 }
-#info{
-    background-color: #053B44;
-}
+
 mark{
     background-color: #053B44;
     color: white;
@@ -350,22 +292,23 @@ mark{
   color: black;
   width: 60%;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 strong{
-    font-size: 120%;
+    font-size: 100%;
     color:#D5F31F;
 }
 
 #droite{
   text-align: right;
-  margin-right: 10%;
+  margin-right: 50px;
 }
 #gauche{
   text-align: left;
-  margin-left: 10%;
+  margin-left: 50px;
 }
 .rounded{
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 /*Navigation*/
@@ -388,17 +331,11 @@ nav a
 /*Footer*/
 
 footer{
-    background-color: #053B44; 
+   background-color: #053B44; 
    display: flex;
    color: white;
 }
-#inf{
-    column-gap: 100px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+
 #telephone{
     font-size: 13px;
 }
@@ -407,16 +344,94 @@ footer{
 }
 #copy {
   background-color: #062a2c;
-display: flex;
+  display: flex;
   color: white;
 }
 #copy h1{
-  font-size: 12px;
-  margin-right: 70%;
-  margin-top: 40px;
+  font-size: 13px;
+  margin-right: 65%;
+  font-weight: lighter;
+  margin-top: 35px;
+
 }
 #copy p{
 word-spacing: 40px;
 font-size: 25px;
+}
+
+
+@media (max-width: 1024px) {
+  .row2{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .col-md-12{
+    width: 100%;
+  }
+  .col-md-6{
+    width: 50%;
+  }
+  .style{
+    text-align: center;
+    margin-right: inherit;
+  }
+  .hamburger {
+    display: block;
+  }
+  .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(-315deg);
+    transform: translateY(8px) rotate(-315deg);
+    width: 300%;
+  }
+  .active .bar:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+    width: 300%;
+  }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 75px;
+    right: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 0 auto;
+    background: white;
+  }
+
+  .nav-menu li {
+    padding: 1rem 0;
+  }
+
+  a.nav-link {
+    margin: 1rem 0;
+    color: #333;
+    z-index: 1;
+  }
+
+  .active {
+    right: 0;
+    z-index: 100;
+    transition: 0.2s ease;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  a.nav-link {
+    padding: 0.75rem 0;
+  }
 }
 
