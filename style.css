@@ -116,9 +116,6 @@ a.nav-link {
 .bar:nth-child(3) {
   width: 300%;
 }
-
-
-
 .container{
   padding-left: 10%;
   padding-right: 10%; 
@@ -152,6 +149,11 @@ section#contact .container form input{
 .col-6{
     width: 50%;
     color: white;
+}
+.col-10{
+  width: 100%;
+  color: white;
+  font-weight: lighter;
 }
 input[type="text"], textarea
 {
@@ -212,6 +214,16 @@ section#metting .container .image{
 .mt-60{
     margin-top: 60px;
 }
+
+.mt-20{
+  margin-top: 20px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.last{
+  margin-top: -20px;
+}
 .col-5{
     width: 25%;
     color:#D5F31F;
@@ -223,10 +235,10 @@ section#metting .container .image{
     margin-top: 70px;
 }
 .col-2{
-  width: 40%;
-  background-color: #053B44;
+  width: 20%;
   font-size: 15px;
   color: white;
+  margin-top: 10px;
 }
 .col-4 p{
     font-weight: lighter;
@@ -244,7 +256,7 @@ section#metting .container .image{
 #star h3{
     color: #029d5b;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 #star p{
     font-size:20px ;
@@ -253,17 +265,15 @@ section#metting .container .image{
 }
 #reunion img{
     border-radius: 5%;
-    width: 80%;
+    width: 90%;
     margin-top: 10%;
 }
 #eco{
-  margin-top: 10%;
+  margin-top: 60px;
     border: 1px solid;
     border-color: #053B44;
     border-radius: 5%;
-    width: 80%;
-  
-    
+    width: 90%;   
 }
 #eco h1{
     font-weight: bold;
@@ -273,7 +283,9 @@ section#metting .container .image{
 #eco p{
     font-weight: lighter;
 }
-
+#eco img{
+  margin-bottom: 10%;
+}
 #content1 p{
   font-weight: lighter;
 }
@@ -294,8 +306,9 @@ mark{
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
 strong{
-    font-size: 100%;
+    font-size: 25px;
     color:#D5F31F;
 }
 
@@ -344,7 +357,6 @@ footer{
 }
 #copy {
   background-color: #062a2c;
-  display: flex;
   color: white;
 }
 #copy h1{
@@ -354,9 +366,8 @@ footer{
   margin-top: 35px;
 
 }
-#copy p{
-word-spacing: 40px;
-font-size: 25px;
+.icon-footer{
+  text-align: right;
 }
 
 
@@ -427,11 +438,27 @@ font-size: 25px;
     z-index: 100;
     transition: 0.2s ease;
   }
+  .text{
+    width: 40%;
+    margin: 0 auto;
+  }
+  .left-footer, .rigth-footer{
+    width: 100%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
   a.nav-link {
     padding: 0.75rem 0;
+  }
+  .text{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon-footer{
+   width: 100%;
+   margin: auto;
   }
 }
 
