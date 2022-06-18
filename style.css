@@ -123,9 +123,11 @@ a.nav-link {
 section#contact {
     background-color: #053B44;
 }
-
-section#contact .container form input{
-    width: 90%;
+.form-rigth{
+  padding-right: 20px;
+}
+.form-left{
+  padding-left: 20px;
 }
 #service h1{
     font-size: 30px;
@@ -163,7 +165,13 @@ input[type="text"], textarea
     border-right: none;
     border-bottom: 3px solid white;
     width: 100%;
+    color: white;
 }
+textarea:focus, input:focus{
+  outline: none;
+  color:white
+}
+
 section#contact .container .title h1 {
 text-align: center;
 color: #D5F31F;
@@ -308,7 +316,7 @@ mark{
 }
 
 strong{
-    font-size: 25px;
+    font-size: 30px;
     color:#D5F31F;
 }
 
@@ -319,6 +327,10 @@ strong{
 #gauche{
   text-align: left;
   margin-left: 50px;
+  margin-top: -25px;
+}
+.chevron{
+  margin-top: -40px;
 }
 .rounded{
   border-radius: 50%;
@@ -445,6 +457,10 @@ footer{
   .left-footer, .rigth-footer{
     width: 100%;
     margin: auto;
+  }
+  .border-none{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
